@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Супер вечеринка</title>
+    <link rel="stylesheet" href="anwser/anwser.css">
+  </head>
+  <body>
+    <header>
+      <span>Здравствуйте, <%= user.displayName %></span>
+      <a href="/logout"><img src="img/logout.png" alt=""></a>
+    </header>
+    <main>
+      <form>      
+        <div class="item" id="questionWillCome">
+          <div class="question">
+            Ты прийдешь на супер вечеринку?
+            <span class="invalid">Пожалуйста, ответьте на вопрос.</span>
+          </div>
+          <div class="anwsers">
+            <div>
+              <input type="radio" name="willCome" id="yes" value=true required/><label for="yes">Да</label>
+            </div>
+            <div>
+              <input type="radio" name="willCome" id="no" value=false /><label for="no">Нет</label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="question" id="questionDrinks">
+            Какие напитки предпочитаете?
+            <span class="invalid">Пожалуйста, ответьте на вопрос.</span>
+          </div>
+          <div class="anwsers">
+            <div>
+              <input type="checkbox" name="drinks" id="Вино"/><label for="Вино">Вино</label>
+            </div>
+            <div>
+              <input type="checkbox" name="drinks" id="Ром"/><label for="Ром">Ром</label>
+            </div>
+            <div>
+              <input type="checkbox" name="drinks" id="Пиво"/><label for="Пиво">Пиво</label>
+            </div>
+            <div>
+              <input type="checkbox" name="drinks" id="Водка"/><label for="Водка">Водка</label>
+            </div>
+            <div>
+              <input type="checkbox" name="drinks" id="Безалкогольные"/><label for="Безалкогольные">Безалкогольные</label>
+            </div>
+            <div>
+              <input type="checkbox" name="drinks" id="Шнапс"/><label for="Шнапс">Шнапс</label>
+            </div>
+          </div>
+        </div>
+        <input type="submit" name="" value="Отправить ответ" class="send">
+      </form>
+      
+    </main>
+  </body>
+  
+  <script src="anwser/anwser.js"></script>
+</html>

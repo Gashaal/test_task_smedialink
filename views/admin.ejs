@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Супер вечеринка</title>
+    <link rel="stylesheet" href="admin/admin.css">
+  </head>
+  <body>
+    <header>
+      <span>Здравствуйте, <%= user.displayName %></span>
+      <a href="/logout"><img src="img/logout.png" alt=""></a>
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <td>Гость</td>
+            <td>Прийдет ли на вечеринку</td>
+            <td>Предпочитаемые напитки</td>
+          </tr>
+        </thead>
+        <tbody>
+          <% for(var i=0; i<anwsers.length; i++) {%>
+            <tr>
+              <td>
+                <img class="avatar" src="<%= anwsers[i].avatar %>" alt="">
+                <span><%= anwsers[i].avatar %></span>
+                <span><%= anwsers[i].displayName %></span>
+              </td>
+              <td>
+                <%= anwsers[i].willCome %>
+              </td>
+              <td>
+                <%= anwsers[i].drinks %>
+              </td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

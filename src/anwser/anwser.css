@@ -1,0 +1,52 @@
+html {
+  color: #677F94;
+  font-family: sans serif;
+  font-size: 20px;
+}
+
+header {
+  max-width: 960px;
+  margin: 40px auto 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  max-width: 960px;
+  margin: 40px auto 0px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  margin-top: 20px
+}
+
+.anwsers {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px 0px 40px;
+  font-size: 18px;
+}
+
+.send {
+  align-self: center;
+  margin-top: 20px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+}
+
+.invalid {
+  color: red;
+  font-size: 16px;
+  margin-left: 40px;
+  display: none;
+}

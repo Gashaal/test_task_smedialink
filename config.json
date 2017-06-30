@@ -1,0 +1,26 @@
+{
+  "port": 3000,
+  "db": {
+    "url": "postgres://test_task_smedialink:test_task_smedialink@127.0.0.1:5432/test_task_smedialink"
+  },
+  "vk": {
+    "appId": 4624857,
+    "appSecret": "y5sV25r8B5N7YTUuliwc"
+  },
+  "admin": {
+    "id": 47084845,
+    "email": "antinaar@gmail.com"
+  },
+  "session": {
+    "secret": "test_task_smedialink"
+  },
+  "smptConfig": {
+    "host": "",
+    "port": 465,
+    "secure": true,
+    "auth": {
+      "user": "",
+      "pass": ""
+    }
+  }
+}

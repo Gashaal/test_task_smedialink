@@ -1,0 +1,17 @@
+html {
+  color: #677F94;
+  font-family: sans serif;
+  font-size: 20px;
+}
+
+header {
+  max-width: 960px;
+  margin: 40px auto 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
